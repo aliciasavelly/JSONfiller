@@ -1,26 +1,86 @@
 [
   {
-    "name": "Meowsy",
-    "species" : "cat",
-    "foods": {
-      "likes": ["tuna", "catnip"],
-      "dislikes": ["ham", "zucchini"]
-    }
-  },
-  {
-    "name": "Barky",
-    "species" : "dog",
-    "foods": {
-      "likes": ["bones", "carrots"],
-      "dislikes": ["tuna"]
-    }
-  },
-  {
-    "name": "Purrpaws",
-    "species" : "cat",
-    "foods": {
-      "likes": ["mice"],
-      "dislikes": ["cookies"]
-    }
+    "node": "root",
+    "child": [
+      {
+        "node": "element",
+        "tag": "p",
+        "attr": { "class": ["title"] },
+        "child": [
+          {
+          "node": "text",
+          "text": "First Div"
+          },
+          {
+            "node": "element",
+            "tag": "div",
+            "child": [
+              {
+                "node": "element",
+                "tag": "ul",
+                "child": [
+                  {
+                    "node": "element",
+                    "tag": "li",
+                    "child": [
+                      {
+                        "node": "text",
+                        "text": "First LI"
+                      }
+                    ]
+                  },
+                  {
+                    "node": "element",
+                    "tag": "li",
+                    "child": [
+                      {
+                        "node": "text",
+                        "text": "Second LI: "
+                      },
+                      {
+                        "node": "element",
+                        "tag": "a",
+                        "attr": [ "href": "www.google.com" ],
+                        "child": [
+                          {
+                            "node": "text",
+                            "text": "Google"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "node": "element",
+                    "tag": "li",
+                    "child": [
+                      {
+                        "node": "text",
+                        "text": "Third LI"
+                      }
+                    ]
+                  },
+                  {
+                    "node": "element",
+                    "tag": "li",
+                    "child": [
+                      {
+                        "node": "text",
+                        "text": "Fourth LI"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "attr": {}
+      }
+    ]
   }
 ]
